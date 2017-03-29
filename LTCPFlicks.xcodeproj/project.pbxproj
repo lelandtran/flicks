@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2BBD3427DF124E3C25193084 /* Pods_LTCPFlicksTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE356FB44C72658A02323628 /* Pods_LTCPFlicksTests.framework */; };
+		2E20C5E547782A8C1BC20EC6 /* Pods_LTCPFlicksUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66E013D6CC22EB59A422629A /* Pods_LTCPFlicksUITests.framework */; };
+		4B5641623E6EA95AC26B6F48 /* Pods_LTCPFlicks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DA06E0FD1F0FFC3D2E9D415 /* Pods_LTCPFlicks.framework */; };
 		CB5D477A1E8C1A6D0047383F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5D47791E8C1A6D0047383F /* AppDelegate.swift */; };
 		CB5D477F1E8C1A6D0047383F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB5D477D1E8C1A6D0047383F /* Main.storyboard */; };
 		CB5D47811E8C1A6D0047383F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB5D47801E8C1A6D0047383F /* Assets.xcassets */; };
@@ -35,6 +38,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2DA06E0FD1F0FFC3D2E9D415 /* Pods_LTCPFlicks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LTCPFlicks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		30D6599FC4BA876A5481C7C4 /* Pods-LTCPFlicksUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LTCPFlicksUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LTCPFlicksUITests/Pods-LTCPFlicksUITests.release.xcconfig"; sourceTree = "<group>"; };
+		52AD111AC398332C37917474 /* Pods-LTCPFlicks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LTCPFlicks.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LTCPFlicks/Pods-LTCPFlicks.debug.xcconfig"; sourceTree = "<group>"; };
+		54EC74A4710CA7B95949D1E0 /* Pods-LTCPFlicksTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LTCPFlicksTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LTCPFlicksTests/Pods-LTCPFlicksTests.debug.xcconfig"; sourceTree = "<group>"; };
+		66E013D6CC22EB59A422629A /* Pods_LTCPFlicksUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LTCPFlicksUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		825196534E806B787592ECD2 /* Pods-LTCPFlicks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LTCPFlicks.release.xcconfig"; path = "Pods/Target Support Files/Pods-LTCPFlicks/Pods-LTCPFlicks.release.xcconfig"; sourceTree = "<group>"; };
+		A2174C9E8DA69697656ECD4D /* Pods-LTCPFlicksTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LTCPFlicksTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LTCPFlicksTests/Pods-LTCPFlicksTests.release.xcconfig"; sourceTree = "<group>"; };
+		BE356FB44C72658A02323628 /* Pods_LTCPFlicksTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LTCPFlicksTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB5D47761E8C1A6D0047383F /* LTCPFlicks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LTCPFlicks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB5D47791E8C1A6D0047383F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB5D477E1E8C1A6D0047383F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -49,6 +60,7 @@
 		CB5D479B1E8C1A6D0047383F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB5D47A71E8C1BBB0047383F /* MoviesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
 		CB5D47AA1E8C35F10047383F /* MovieCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
+		D441AD2BF5503961ED848E65 /* Pods-LTCPFlicksUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LTCPFlicksUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LTCPFlicksUITests/Pods-LTCPFlicksUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B5641623E6EA95AC26B6F48 /* Pods_LTCPFlicks.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BBD3427DF124E3C25193084 /* Pods_LTCPFlicksTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +84,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E20C5E547782A8C1BC20EC6 /* Pods_LTCPFlicksUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		20535BCAF939D4A0019786FF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				52AD111AC398332C37917474 /* Pods-LTCPFlicks.debug.xcconfig */,
+				825196534E806B787592ECD2 /* Pods-LTCPFlicks.release.xcconfig */,
+				54EC74A4710CA7B95949D1E0 /* Pods-LTCPFlicksTests.debug.xcconfig */,
+				A2174C9E8DA69697656ECD4D /* Pods-LTCPFlicksTests.release.xcconfig */,
+				D441AD2BF5503961ED848E65 /* Pods-LTCPFlicksUITests.debug.xcconfig */,
+				30D6599FC4BA876A5481C7C4 /* Pods-LTCPFlicksUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		891560236E7D254CE3A9B305 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2DA06E0FD1F0FFC3D2E9D415 /* Pods_LTCPFlicks.framework */,
+				BE356FB44C72658A02323628 /* Pods_LTCPFlicksTests.framework */,
+				66E013D6CC22EB59A422629A /* Pods_LTCPFlicksUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CB5D476D1E8C1A6D0047383F = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +121,8 @@
 				CB5D478D1E8C1A6D0047383F /* LTCPFlicksTests */,
 				CB5D47981E8C1A6D0047383F /* LTCPFlicksUITests */,
 				CB5D47771E8C1A6D0047383F /* Products */,
+				20535BCAF939D4A0019786FF /* Pods */,
+				891560236E7D254CE3A9B305 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -151,9 +191,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CB5D479E1E8C1A6D0047383F /* Build configuration list for PBXNativeTarget "LTCPFlicks" */;
 			buildPhases = (
+				69BEA49EAAA672BA3629A170 /* [CP] Check Pods Manifest.lock */,
 				CB5D47721E8C1A6D0047383F /* Sources */,
 				CB5D47731E8C1A6D0047383F /* Frameworks */,
 				CB5D47741E8C1A6D0047383F /* Resources */,
+				464BA8F295030B63323B4E77 /* [CP] Embed Pods Frameworks */,
+				378ADFC7F247713E43E7FA94 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -168,9 +211,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CB5D47A11E8C1A6D0047383F /* Build configuration list for PBXNativeTarget "LTCPFlicksTests" */;
 			buildPhases = (
+				606BBA57BC3D10F6BC200286 /* [CP] Check Pods Manifest.lock */,
 				CB5D47861E8C1A6D0047383F /* Sources */,
 				CB5D47871E8C1A6D0047383F /* Frameworks */,
 				CB5D47881E8C1A6D0047383F /* Resources */,
+				737EB41E65A44757B2950B7C /* [CP] Embed Pods Frameworks */,
+				295AAF33E3596A3196EBEA63 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -186,9 +232,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CB5D47A41E8C1A6D0047383F /* Build configuration list for PBXNativeTarget "LTCPFlicksUITests" */;
 			buildPhases = (
+				E9C81C70913FE313441A934C /* [CP] Check Pods Manifest.lock */,
 				CB5D47911E8C1A6D0047383F /* Sources */,
 				CB5D47921E8C1A6D0047383F /* Frameworks */,
 				CB5D47931E8C1A6D0047383F /* Resources */,
+				C10B9BB0A807E7F18F5A2C93 /* [CP] Embed Pods Frameworks */,
+				4C12A776BE8D8EAB9FD09835 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -272,6 +321,144 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		295AAF33E3596A3196EBEA63 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LTCPFlicksTests/Pods-LTCPFlicksTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		378ADFC7F247713E43E7FA94 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LTCPFlicks/Pods-LTCPFlicks-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		464BA8F295030B63323B4E77 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LTCPFlicks/Pods-LTCPFlicks-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4C12A776BE8D8EAB9FD09835 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LTCPFlicksUITests/Pods-LTCPFlicksUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		606BBA57BC3D10F6BC200286 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		69BEA49EAAA672BA3629A170 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		737EB41E65A44757B2950B7C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LTCPFlicksTests/Pods-LTCPFlicksTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C10B9BB0A807E7F18F5A2C93 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LTCPFlicksUITests/Pods-LTCPFlicksUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9C81C70913FE313441A934C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CB5D47721E8C1A6D0047383F /* Sources */ = {
@@ -428,6 +615,7 @@
 		};
 		CB5D479F1E8C1A6D0047383F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52AD111AC398332C37917474 /* Pods-LTCPFlicks.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LTCPFlicks/Info.plist;
@@ -440,6 +628,7 @@
 		};
 		CB5D47A01E8C1A6D0047383F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 825196534E806B787592ECD2 /* Pods-LTCPFlicks.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LTCPFlicks/Info.plist;
@@ -452,6 +641,7 @@
 		};
 		CB5D47A21E8C1A6D0047383F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54EC74A4710CA7B95949D1E0 /* Pods-LTCPFlicksTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -466,6 +656,7 @@
 		};
 		CB5D47A31E8C1A6D0047383F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2174C9E8DA69697656ECD4D /* Pods-LTCPFlicksTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -480,6 +671,7 @@
 		};
 		CB5D47A51E8C1A6D0047383F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D441AD2BF5503961ED848E65 /* Pods-LTCPFlicksUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = LTCPFlicksUITests/Info.plist;
@@ -493,6 +685,7 @@
 		};
 		CB5D47A61E8C1A6D0047383F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30D6599FC4BA876A5481C7C4 /* Pods-LTCPFlicksUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = LTCPFlicksUITests/Info.plist;

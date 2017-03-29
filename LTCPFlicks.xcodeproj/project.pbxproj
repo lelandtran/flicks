@@ -14,6 +14,7 @@
 		CB5D478F1E8C1A6D0047383F /* LTCPFlicksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5D478E1E8C1A6D0047383F /* LTCPFlicksTests.swift */; };
 		CB5D479A1E8C1A6D0047383F /* LTCPFlicksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5D47991E8C1A6D0047383F /* LTCPFlicksUITests.swift */; };
 		CB5D47A81E8C1BBB0047383F /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5D47A71E8C1BBB0047383F /* MoviesViewController.swift */; };
+		CB5D47AB1E8C35F10047383F /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5D47AA1E8C35F10047383F /* MovieCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		CB5D47991E8C1A6D0047383F /* LTCPFlicksUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTCPFlicksUITests.swift; sourceTree = "<group>"; };
 		CB5D479B1E8C1A6D0047383F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB5D47A71E8C1BBB0047383F /* MoviesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
+		CB5D47AA1E8C35F10047383F /* MovieCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +99,13 @@
 		CB5D47781E8C1A6D0047383F /* LTCPFlicks */ = {
 			isa = PBXGroup;
 			children = (
+				CB5D47AC1E8C35FB0047383F /* ViewControllers */,
+				CB5D47A91E8C35CB0047383F /* Views */,
 				CB5D47791E8C1A6D0047383F /* AppDelegate.swift */,
 				CB5D477D1E8C1A6D0047383F /* Main.storyboard */,
 				CB5D47801E8C1A6D0047383F /* Assets.xcassets */,
 				CB5D47821E8C1A6D0047383F /* LaunchScreen.storyboard */,
 				CB5D47851E8C1A6D0047383F /* Info.plist */,
-				CB5D47A71E8C1BBB0047383F /* MoviesViewController.swift */,
 			);
 			path = LTCPFlicks;
 			sourceTree = "<group>";
@@ -123,6 +126,22 @@
 				CB5D479B1E8C1A6D0047383F /* Info.plist */,
 			);
 			path = LTCPFlicksUITests;
+			sourceTree = "<group>";
+		};
+		CB5D47A91E8C35CB0047383F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CB5D47AA1E8C35F10047383F /* MovieCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		CB5D47AC1E8C35FB0047383F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CB5D47A71E8C1BBB0047383F /* MoviesViewController.swift */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,6 +280,7 @@
 			files = (
 				CB5D477A1E8C1A6D0047383F /* AppDelegate.swift in Sources */,
 				CB5D47A81E8C1BBB0047383F /* MoviesViewController.swift in Sources */,
+				CB5D47AB1E8C35F10047383F /* MovieCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

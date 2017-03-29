@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		CB5D477A1E8C1A6D0047383F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5D47791E8C1A6D0047383F /* AppDelegate.swift */; };
-		CB5D477C1E8C1A6D0047383F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5D477B1E8C1A6D0047383F /* ViewController.swift */; };
 		CB5D477F1E8C1A6D0047383F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB5D477D1E8C1A6D0047383F /* Main.storyboard */; };
 		CB5D47811E8C1A6D0047383F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB5D47801E8C1A6D0047383F /* Assets.xcassets */; };
 		CB5D47841E8C1A6D0047383F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB5D47821E8C1A6D0047383F /* LaunchScreen.storyboard */; };
 		CB5D478F1E8C1A6D0047383F /* LTCPFlicksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5D478E1E8C1A6D0047383F /* LTCPFlicksTests.swift */; };
 		CB5D479A1E8C1A6D0047383F /* LTCPFlicksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5D47991E8C1A6D0047383F /* LTCPFlicksUITests.swift */; };
+		CB5D47A81E8C1BBB0047383F /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5D47A71E8C1BBB0047383F /* MoviesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +36,6 @@
 /* Begin PBXFileReference section */
 		CB5D47761E8C1A6D0047383F /* LTCPFlicks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LTCPFlicks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB5D47791E8C1A6D0047383F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CB5D477B1E8C1A6D0047383F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CB5D477E1E8C1A6D0047383F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CB5D47801E8C1A6D0047383F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB5D47831E8C1A6D0047383F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +46,7 @@
 		CB5D47951E8C1A6D0047383F /* LTCPFlicksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LTCPFlicksUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB5D47991E8C1A6D0047383F /* LTCPFlicksUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTCPFlicksUITests.swift; sourceTree = "<group>"; };
 		CB5D479B1E8C1A6D0047383F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB5D47A71E8C1BBB0047383F /* MoviesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +98,11 @@
 			isa = PBXGroup;
 			children = (
 				CB5D47791E8C1A6D0047383F /* AppDelegate.swift */,
-				CB5D477B1E8C1A6D0047383F /* ViewController.swift */,
 				CB5D477D1E8C1A6D0047383F /* Main.storyboard */,
 				CB5D47801E8C1A6D0047383F /* Assets.xcassets */,
 				CB5D47821E8C1A6D0047383F /* LaunchScreen.storyboard */,
 				CB5D47851E8C1A6D0047383F /* Info.plist */,
+				CB5D47A71E8C1BBB0047383F /* MoviesViewController.swift */,
 			);
 			path = LTCPFlicks;
 			sourceTree = "<group>";
@@ -259,8 +259,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB5D477C1E8C1A6D0047383F /* ViewController.swift in Sources */,
 				CB5D477A1E8C1A6D0047383F /* AppDelegate.swift in Sources */,
+				CB5D47A81E8C1BBB0047383F /* MoviesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

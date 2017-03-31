@@ -8,6 +8,7 @@
 
 import UIKit
 import AFNetworking
+import ALLoadingView
 
 class MoviesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
@@ -16,10 +17,48 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
     var movies: [NSDictionary]?
     var endpoint: String!
     
+    
+    func refreshControlAction(_ refreshControl: UIRefreshControl){
+        let apiKey = "ecb5b60bc1ad48abdf13d063348ee3e1"
+        let reqUrl = NSURL(string:"https://api.themoviedb.org/3/movie/"+endpoint+"?api_key=\(apiKey)")!
+        let request = NSURLRequest(url: reqUrl as URL)
+        let session = URLSession(
+            configuration: URLSessionConfiguration.default,
+            delegate: nil,
+            delegateQueue: OperationQueue.main
+        )
+        
+        let task : URLSessionDataTask  =
+            session
+                .dataTask(with: request as URLRequest,
+                          completionHandler: { (dataOrNil, response, error) in
+                            if let data = dataOrNil {
+                                if let responseDictionary =
+                                    try! JSONSerialization.jsonObject( with: data,
+                                                                       options:[]) as? NSDictionary {
+                                    NSLog("response: \(responseDictionary)")
+                                    self.movies = responseDictionary["results"] as? [NSDictionary]
+                                    self.tableView.reloadData()
+                                    
+                                    refreshControl.endRefreshing()
+                                }
+                            }
+                            
+                });
+        
+        
+        task.resume();
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
         tableView.delegate = self
+        
+        let refreshControl = UIRefreshControl()
+        refreshControl.addTarget(self, action:#selector(refreshControlAction(_:)), for: UIControlEvents.valueChanged)
+        tableView.insertSubview(refreshControl, at: 0)
         
         let apiKey = "ecb5b60bc1ad48abdf13d063348ee3e1"
         let reqUrl = NSURL(string:"https://api.themoviedb.org/3/movie/"+endpoint+"?api_key=\(apiKey)")!
@@ -29,6 +68,7 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
             delegate: nil,
             delegateQueue: OperationQueue.main
         )
+        
         let task : URLSessionDataTask  =
             session
             .dataTask(with: request as URLRequest,
@@ -43,8 +83,9 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
                                             
                                         }
                                     }
+            
             });
-                
+        
                                     
         task.resume();
     }
@@ -53,6 +94,7 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if let movies = movies {
@@ -95,8 +137,6 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         
         let detailViewController = segue.destination as! DetailViewController
         detailViewController.movie = movie
-        
-        print("prepare for segue called")
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
     }

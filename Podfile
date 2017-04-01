@@ -7,7 +7,7 @@ target 'LTCPFlicks' do
 
   # Pods for LTCPFlicks
   pod 'AFNetworking'
-  pod 'ALLoadingView'
+  pod 'MBProgressHUD'
 
   target 'LTCPFlicksTests' do
     inherit! :search_paths

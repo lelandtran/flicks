@@ -8,7 +8,7 @@
 
 import UIKit
 import AFNetworking
-import ALLoadingView
+import MBProgressHUD
 
 class MoviesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     @IBOutlet weak var errorView: UIView!
@@ -38,10 +38,13 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
             delegateQueue: OperationQueue.main
         )
         
+        MBProgressHUD.showAdded(to: self.view, animated: true)
+        
         let task : URLSessionDataTask  =
             session
             .dataTask(with: request as URLRequest,
              completionHandler: { (dataOrNil, response, error) in
+                MBProgressHUD.hide(for: self.view, animated: true)
                 if error != nil {
                     self.errorView.alpha = 1
                 }
@@ -82,10 +85,13 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
             delegateQueue: OperationQueue.main
         )
         
+        MBProgressHUD.showAdded(to: self.view, animated: true)
+        
         let task : URLSessionDataTask  =
             session
                 .dataTask(with: request as URLRequest,
                           completionHandler: { (dataOrNil, response, error) in
+                            MBProgressHUD.hide(for: self.view, animated: true)
                             if error != nil {
                                 self.errorView.alpha = 1
                             } else {

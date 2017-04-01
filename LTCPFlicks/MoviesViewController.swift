@@ -45,23 +45,7 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
             .dataTask(with: request as URLRequest,
              completionHandler: { (dataOrNil, response, error) in
                 MBProgressHUD.hide(for: self.view, animated: true)
-                if error != nil {
-                    self.errorView.alpha = 1
-                }
-                else {
-                    self.errorView.alpha = 0
-                    if let data = dataOrNil {
-                        if let responseDictionary =
-                            try! JSONSerialization
-                                .jsonObject(with: data, options:[]) as? NSDictionary {
-                                    NSLog("response: \(responseDictionary)")
-                                    self.movies = responseDictionary["results"] as? [NSDictionary]
-                                    self.tableView.reloadData()
-                                            
-                                }
-                    }
-                }
-            
+                self.loadTableView(dataOrNil, response, error)
             });
         
                                     
@@ -71,6 +55,25 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func loadTableView(_ dataOrNil: Data?, _ response: URLResponse?, _ error: Error?){
+        if error != nil {
+            self.errorView.alpha = 1
+        } else {
+            self.errorView.alpha = 0
+            if let data = dataOrNil {
+                if let responseDictionary =
+                    try! JSONSerialization.jsonObject( with: data,
+                                                       options:[]) as? NSDictionary {
+                    NSLog("response: \(responseDictionary)")
+                    self.movies = responseDictionary["results"] as? [NSDictionary]
+                    
+                }
+            }
+            
+        }
+        self.tableView.reloadData()
     }
     
     
@@ -92,22 +95,7 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
                 .dataTask(with: request as URLRequest,
                           completionHandler: { (dataOrNil, response, error) in
                             MBProgressHUD.hide(for: self.view, animated: true)
-                            if error != nil {
-                                self.errorView.alpha = 1
-                            } else {
-                                self.errorView.alpha = 0
-                                if let data = dataOrNil {
-                                    if let responseDictionary =
-                                        try! JSONSerialization.jsonObject( with: data,
-                                                                           options:[]) as? NSDictionary {
-                                        NSLog("response: \(responseDictionary)")
-                                        self.movies = responseDictionary["results"] as? [NSDictionary]
-                                        
-                                    }
-                                }
-
-                            }
-                            self.tableView.reloadData()
+                            self.loadTableView(dataOrNil, response, error)
                             refreshControl.endRefreshing()
                 });
         

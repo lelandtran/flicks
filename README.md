@@ -1,9 +1,9 @@
 # Project 1 - *LTCPFlicks*
-LelandTranCodePathFlicks (that's a mouthful)
+LelandTranCodePathFlicks (sorry that's a mouthful)
 
 LTCPFlicks is a movies app using the [The Movie Database API](http://docs.themoviedb.apiary.io/#).
 
-Time spent: **X** hours spent in total
+Time spent: **10** hours spent in total
 
 ## User Stories
 

@@ -42,10 +42,10 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 ## Notes
 
 Describe any challenges encountered while building the app.
--For some reason, my app was failing when I tried to embed the "endpoint" field in the URL string using the conventional 
+- For some reason, my app was failing when I tried to embed the "endpoint" field in the URL string using the conventional 
 "\(endpont)" syntax for formatting values in strings. Therefore, the NSURL initializer was returning null and my app would fail when it would get casted as a URL for the NSURLRequest. I instead just used String addition to embed the endpoint, which I'm expecting isn't a best practice, but it was my workaround.
--I got stuck with disabling the NS App Transport Security per domain because I set the NSExceptionAllowsInsecureHTTPLoads to YES, but I set it as a string as opposed to a boolean.
--The loading HUD wasn't showing up for a while even though I followed the example perfectly. Even when I set a breakpoint, the HUD didn't show up after I would step over the MBProgressHUD.showAdded() call. I decided to work on the remaining user stories and return to it later. When I came back to it, I tried breakpoint debugging again, and this time I put a breakpoint at the MBProgressHUD.hide() call and let it run until the .hide() call and saw that the HUD was in fact showing up. So I ended up realizing that I couldn't make any assumptions on how the debugger runs. I still need to learn and understand that much.
+- I got stuck with disabling the NS App Transport Security per domain because I set the NSExceptionAllowsInsecureHTTPLoads to YES, but I set it as a string as opposed to a boolean.
+- The loading HUD wasn't showing up for a while even though I followed the example perfectly. Even when I set a breakpoint, the HUD didn't show up after I would step over the MBProgressHUD.showAdded() call. I decided to work on the remaining user stories and return to it later. When I came back to it, I tried breakpoint debugging again, and this time I put a breakpoint at the MBProgressHUD.hide() call and let it run until the .hide() call and saw that the HUD was in fact showing up. So I ended up realizing that I couldn't make any assumptions on how the debugger runs. I still need to learn and understand that much.
 
 ## License
 
